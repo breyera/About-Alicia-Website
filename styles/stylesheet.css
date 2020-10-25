@@ -87,3 +87,51 @@ h3 {
 .about-me {
   padding-top: 20px;
 }
+
+.education-flex {
+  display: flex;
+}
+
+.education-main-content {
+  flex: 3;
+}
+
+.education-aside {
+  flex: 1;
+  background-color: #9BC3E5;
+  color: #f5f5f5;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.education-aside ul {
+  text-align: left;
+  color: #f5f5f5;
+  line-height: 1.6em;
+}
+
+.about-me-flex {
+  display: flex;
+}
+
+.about-me-paragraphs {
+  flex: 3;
+}
+
+.about-me-sidebar {
+  flex: 1;
+  background-color: #9BC3E5;
+  color: #f5f5f5;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.about-me-sidebar ul {
+  text-align: left;
+  color: #f5f5f5;
+  line-height: 1.6em;
+}
