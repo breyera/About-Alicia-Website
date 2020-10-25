@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Alicia Breyer</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
+
 <body>
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Welcome to My Site!</h1>
+      <h2>This site is dedicated to telling you about me, Alicia Breyer - hopefully you will get a glimpse into my life and interests.</h2>
+      <a href="#about-me" class="btn">Learn More</a>
+    </div>
+  </section>
+
   <header>
-    <h1>The Life and Times of Alicia Breyer</h1>
     <nav>
-      <ul>
-        <li><a href="#welcome">HomePage</a></li>
-        <li><a href="#welcome">Welcome</a></li>
+      <ul class="topnav">
+        <li><a href="#hero" class="active">HomePage</a></li>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="./project-list.html" target="_blank">HTML 110B Project List</a></li>
@@ -22,21 +30,15 @@
 
 <!-- welcome message -->
 
-  <main id="main">
-    <section id="welcome">
-      <h3>Welcome to My Site!</h3>
-      <p>This site is dedicated to telling you about me, Alicia Breyer - hopefully you will get a glimpse into my life and interests.</p>
-    </section>
+  <main id="main" class="main">
 <!-- about me section -->
-
-    <section id="about-me">
+    <section id="about-me" class="about-me">
       <h3>About Alicia</h3>
-      <p>Born in San Mateo, California, I moved up to Washigton State in 3<sup>rd</sup> grade with my family after my Dad got a job with Microsoft (like many other families in the area). I attended Bellevue High School, and went on the get my Bachelors of Arts degree in Psychology from Scripps College.</p>
+      <p>Born in San Mateo, California, I moved up to Washington State in third grade with my family after my Dad got a job with Microsoft (like many other families in the area). I attended Bellevue High School, and went on the get my Bachelors of Arts degree in Psychology from Scripps College.</p>
       <p>As an undergraduate, I balanced school with work and activities ranging from board game club to ultimate frisbee. In 2016 I took a Social Psychology class, leading to an opportunity for publication. During the class, my fellow students and I wrote short essays about social pyschology topics, accumulated in a now-published book "Social Psychology and World Peace: A Primer".</p>
       <p>In the summer of 2015, I was hired as a Summer Marketing Intern at Oracle. This experience was crucial in developing my interest in tech, and also opened my eyes to Marketing as a career. When I graduated Scripps in 2017, I began full-time at Oracle as part of the Class Of Marketing.</p>
       <p>When not working, I enjoy playing Bridge, Quidditch, and hanging out with friends.</p>
-
-      <aside>
+      <aside id="about-me-sidebar" class="about-me-sidebar">
         Click here to read more about:
         <ul>
           <li><a href="https://www.amazon.com/Social-Psychology-World-Peace-Primer/dp/9382661670/ref=sr_1_1?dchild=1&keywords=psychology+and+world+peace+a+primer&qid=1602909632&sr=8-1">Social Psychology and World Peace: A Primer</a></li>
@@ -48,8 +50,10 @@
 
 <!-- section about my education -->
 
-    <section id="education">
+    <section id="education" class="education">
+      <div class="education-wrapper">
       <h3>Education</h3>
+        <div class="main-education">
         <h4>Scripps College</h4>
           <ul>
             <li><em>Bachelor of Arts, Psychology</em></li>
@@ -62,16 +66,20 @@
             <li><em>October 2020 - Present</em></li>
             <li><a href="./project-list.html"><em>HTML 110B Project List</em></a></li>
           </ul>
-    <aside>
+          </div>
+        <div class="education-aside">
+    <aside class="education-aside">
       <h5>Learn More about the Schools</h5>
       <ul>
         <li><a href="https://www.scrippscollege.edu/about/" target="_blank">Scripps College</a></li>
         <li><a href="https://www.washington.edu/about/">University of Washington</a></li>
       </ul>
     </aside>
+    </div>
+    </div>
     </section>
 
-    <section id="blog-posts">
+    <section id="blog-posts" class="blog-posts">
       <h3>Blog Posts</h3>
       <article>
         <h4>Creative Blog Post Title</h4>
