@@ -85,7 +85,8 @@ header li:hover {
 
 h3 {
   font-family: 'Bebas Neue', cursive, sans-serif;
-  font-size: 30px;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
 }
 
 a:link {
@@ -100,6 +101,7 @@ a:visited {
   width: 80%;
   margin: auto;
   min-height: 100%;
+  padding-bottom: 3rem;
 }
 
 .ul-none {
@@ -107,27 +109,31 @@ a:visited {
 }
 
 .about-me {
-  padding-top: 20px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .education-flex {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .education-main-content {
   flex: 3;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
 }
 
 .education-aside {
   flex: 1;
   border: 5px solid #9BC3E5;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  border-radius: 25px;
+  margin-left: 5rem;
+  margin-right: 3rem;
   padding: 1rem;
   text-align: center;
-  border-radius: 25px;
+  max-width: 250px;
 }
 
 .education-aside ul a {
@@ -146,22 +152,24 @@ a:visited {
 
 .about-me-flex {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .about-me-paragraphs {
   flex: 3;
+  padding-right: 5rem;
 }
 
 .about-me-sidebar {
   flex: 1;
   border: 5px solid #9BC3E5;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  border-radius: 25px;
+  margin-left: 5rem;
+  margin-right: 3rem;
   padding: 1rem;
   text-align: center;
-  border-radius: 25px;
+  max-width: 250px;
 }
 
 .about-me-sidebar ul a {
@@ -177,6 +185,15 @@ a:visited {
   transition: all .3s;
 }
 
+h4 {
+  font-family: 'Bree Serif', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.blog-posts p {
+  font-family: 'Open Sans', sans-serif;
+}
 /*project list content*/
 
 .project-container {
@@ -356,7 +373,7 @@ a:visited {
 button {
   padding: .7rem 1.3rem;
   line-height: 1.3rem;
-  background-color: #709CC2;
+  background-color: #9BC3E5;
   color: white;
   border: none;
   border-radius: 5px;
