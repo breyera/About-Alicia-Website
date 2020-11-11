@@ -87,6 +87,8 @@ h3 {
   font-family: 'Bebas Neue', cursive, sans-serif;
   font-size: 2.5rem;
   letter-spacing: 3px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
 }
 
 a:link {
@@ -102,6 +104,11 @@ a:visited {
   margin: auto;
   min-height: 100%;
   padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.main h3 {
+  margin-block-end: 1.3rem;
 }
 
 .ul-none {
@@ -194,17 +201,29 @@ h4 {
 .blog-posts p {
   font-family: 'Open Sans', sans-serif;
 }
+
+.blog-posts h4 {
+  padding-top: 1.3rem;
+}
 /*project list content*/
 
 .project-container {
   margin: auto;
+  padding-bottom: 3rem;
   line-height: 1.5;
+}
+
+.project-container h2 {
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 /*project one */
 .project-one-flex {
   display: flex;
-  margin: auto -1rem 1rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-one-main {
@@ -212,19 +231,20 @@ h4 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding: 1rem;
-  padding-top: 0;
 }
 
 .project-one-aside {
   flex: 1;
-  margin-right: 0.5rem;
-  padding: 1rem;
+  margin-right: 2rem;
+  padding-top: 2rem;
 }
 
 /*project two */
 .project-two-flex {
   display: flex;
-  margin: auto -1rem 1rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-two-main {
@@ -232,19 +252,20 @@ h4 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding: 1rem;
-  padding-top: 0;
 }
 
 .project-two-aside {
   flex: 1;
-  margin-right: 0.5rem;
-  padding: 1rem;
+  margin-right: 2rem;
+  padding-top: 2rem;
 }
 
 /*project three */
 .project-three-flex {
   display: flex;
-  margin: auto -1rem 1rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-three-main {
@@ -252,19 +273,20 @@ h4 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding: 1rem;
-  padding-top: 0;
 }
 
 .project-three-aside {
   flex: 1;
-  margin-right: 0.5rem;
-  padding: 1rem;
+  margin-right: 2rem;
+  padding-top: 2rem;
 }
 
 /*project four */
 .project-four-flex {
   display: flex;
-  margin: auto -1rem 1rem;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-four-main {
@@ -272,13 +294,12 @@ h4 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding: 1rem;
-  padding-top: 0;
 }
 
 .project-four-aside {
   flex: 1;
-  margin-right: 0.5rem;
-  padding: 1rem;
+  margin-right: 2rem;
+  padding-top: 2rem;
 }
 /* end project content */
 
@@ -310,6 +331,10 @@ h4 {
 .footer .footer-content .footer-section {
   flex: 1;
   padding: 25px;
+}
+
+.about p {
+  max-width: 350px;
 }
 
 .footer .footer-content .about h1 span {
