@@ -42,6 +42,11 @@ body {
   border: 3px solid white;
   border-radius: 20px;
   background-color: #4D83A3;
+  transition: all .3s;
+}
+
+.hero .btn:hover {
+  background: #003E63;
 }
 
 /*end hero section*/
@@ -57,7 +62,6 @@ header {
   display: flex;
   align-items: center;
   color: #B73225;
-  font-weight: bold;
 }
 
 .header-projectlist {
@@ -76,6 +80,8 @@ header li {
 header li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: all .3s;
 }
 
 header li:hover {
@@ -120,6 +126,52 @@ a:visited {
   list-style-type: none;
 }
 
+/*social sidebar*/
+.wrapper {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.share {
+  width: 58px;
+  height: 58px;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.share .fab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.share.facebook {
+  background: #1A587D;
+}
+
+.share.instagram {
+  background: #337196;
+}
+
+.share.twitter {
+  background: #4D83A3;
+}
+
+.share.linkedin {
+  background: #6695B0;
+}
+
+.share:hover {
+  width: 70px;
+}
+
+/*end social*/
+
 .about-me {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -150,10 +202,14 @@ a:visited {
 .education-aside {
   flex: 1;
   border-radius: 25px;
-  margin-left: 5rem;
+  margin-left: 7rem;
   margin-right: 3rem;
   padding: 1rem;
   max-width: 250px;
+}
+
+.education-aside h4 {
+  margin-top: 0;
 }
 
 .education-aside ul a {
@@ -185,10 +241,14 @@ a:visited {
 .about-me-sidebar {
   flex: 1;
   border-radius: 25px;
-  margin-left: 5rem;
+  margin-left: 7rem;
   margin-right: 3rem;
   padding: 1rem;
   max-width: 250px;
+}
+
+.about-me-sidebar h4 {
+  margin-top: 0;
 }
 
 .about-me-sidebar ul a {
@@ -352,7 +412,7 @@ h4 {
 }
 
 .footer .footer-content .about h1 span {
-  color: #709CC2;
+  color: #6695B0;
 }
 
 .footer .footer-content .about .contact span {
@@ -408,6 +468,7 @@ h4 {
   width: 100%;
   border: none;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer .footer-content .contact-form .contact-input:focus {
@@ -422,8 +483,24 @@ button {
   border: none;
   border-radius: 5px;
   float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all .2s;
 }
 
+button:hover {
+  font-weight: 300;
+  background-color: #337196;
+  font-size: 1.1rem;
+}
+
+.contact i a {
+  transition: all .3s;
+}
+
+.contact i:hover {
+  color: white;
+  margin-left: 5px;
+}
 
 .footer .footer-content .contact-form .btn-footer:hover {
   color: white;
