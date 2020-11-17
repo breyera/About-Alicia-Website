@@ -281,6 +281,18 @@ h4 {
 }
 /*project list content*/
 
+.main-project {
+    width: 80%;
+    margin: auto;
+    min-height: 100%;
+    padding-bottom: 3rem;
+    padding-top: 0;
+}
+
+.main-project h3 {
+  color: #7C2E00;
+}
+
 .project-container {
   margin: auto;
   padding-bottom: 3rem;
@@ -290,6 +302,17 @@ h4 {
 .project-container h2 {
   font-size: 3rem;
   font-weight: bolder;
+}
+
+.main-project a {
+  color: inherit;
+  transition: all .2s;
+}
+
+.main-project a:hover {
+  color: #004E7C;
+  font-weight: bold;
+  margin-left: 5px;
 }
 
 /*project one */
