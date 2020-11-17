@@ -1,7 +1,7 @@
 body {
   height: 100%;
   font: normal 16px Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #DCE1E3;
   line-height: 1.4em;
   margin-top: 80px;
   margin: 0;
@@ -41,14 +41,14 @@ body {
   font-size: 1.5em;
   border: 3px solid white;
   border-radius: 20px;
-  background-color: #709CC2;
+  background-color: #4D83A3;
 }
 
 /*end hero section*/
 
 /*header section*/
 header {
-  background-color: black;
+  background-color: #DCE1E3;
   position: fixed;
   top: 0;
   left: 0;
@@ -56,7 +56,8 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
-  color: white;
+  color: #B73225;
+  font-weight: bold;
 }
 
 .header-projectlist {
@@ -78,8 +79,7 @@ header li a {
 }
 
 header li:hover {
-  background-color: #709CC2;
-  border-radius: 10px;
+  border-bottom: 3px solid #B73225;
 }
 /*end header section*/
 
@@ -111,6 +111,11 @@ a:visited {
   margin-block-end: 1.3rem;
 }
 
+.main hr {
+  border-top: 3px solid #B73225;
+  margin-right: 65%;
+}
+
 .ul-none {
   list-style-type: none;
 }
@@ -132,29 +137,38 @@ a:visited {
   padding-bottom: 3rem;
 }
 
+.education-main-content ul a {
+  transition: all .3s;
+}
+
+.education-main-content ul a:hover {
+  color: #004E7C;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
 .education-aside {
   flex: 1;
-  border: 5px solid #9BC3E5;
   border-radius: 25px;
   margin-left: 5rem;
   margin-right: 3rem;
   padding: 1rem;
-  text-align: center;
   max-width: 250px;
 }
 
 .education-aside ul a {
   display: block;
   margin-bottom: 10px;
+  margin-left: -40px;
   font-size: 1em;
   transition: all .3s;
   list-style-type: none;
 }
 
 .education-aside ul a:hover {
-  color: #3A77AC;
-  margin-left: 15px;
-  transition: all .3s;
+  color: #004E7C;
+  margin-left: -30px;
+  font-weight: bold;
 }
 
 .about-me-flex {
@@ -170,32 +184,32 @@ a:visited {
 
 .about-me-sidebar {
   flex: 1;
-  border: 5px solid #9BC3E5;
   border-radius: 25px;
   margin-left: 5rem;
   margin-right: 3rem;
   padding: 1rem;
-  text-align: center;
   max-width: 250px;
 }
 
 .about-me-sidebar ul a {
   display: block;
   margin-bottom: 10px;
+  margin-left: -40px;
   font-size: 1em;
   transition: all .3s;
 }
 
 .about-me-sidebar ul a:hover {
-  color: #3A77AC;
-  margin-left: 15px;
-  transition: all .3s;
+  color: #004E7C;
+  margin-left: -30px;
+  font-weight: bold;
 }
 
 h4 {
   font-family: 'Bree Serif', sans-serif;
   font-size: 1.3rem;
   font-weight: 300;
+  color: #591C0B;
 }
 
 .blog-posts p {
@@ -367,16 +381,21 @@ h4 {
   transition: all .3s;
 }
 
+.footer .footer-content .links {
+  margin-left: 100px;
+}
+
 .footer .footer-content .links ul a {
   display: block;
   margin-bottom: 10px;
+  margin-left: -20px;
   font-size: 1.2em;
   transition: all .3s;
 }
 
 .footer .footer-content .links ul a:hover {
   color: white;
-  margin-left: 15px;
+  margin-left: -10px;
   transition: all .3s;
 }
 
@@ -398,7 +417,7 @@ h4 {
 button {
   padding: .7rem 1.3rem;
   line-height: 1.3rem;
-  background-color: #9BC3E5;
+  background-color: #4D83A3;
   color: white;
   border: none;
   border-radius: 5px;
