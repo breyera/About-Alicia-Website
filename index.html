@@ -15,17 +15,18 @@
       <h1>Welcome to My Site!</h1>
       <h2>This site is dedicated to telling you about me, Alicia Breyer - hopefully you will get a glimpse into my life and interests.</h2>
       <a href="#about-me" class="btn">Learn About Alicia</a>
+      <a href="#about-me" class="hidden" tabindex="1">Skip to main content</a>
     </div>
   </section>
 
   <header>
     <nav>
       <ul class="topnav">
-        <li><a href="#hero" class="active">HomePage</a></li>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="./project-list.html" target="_blank">HTML 110B Project List</a></li>
-        <li><a href="#blog-posts">Blog Posts</a></li>
+        <a href="#hero"><li>HomePage</li></a>
+        <a href="#about-me"><li>About Me</li></a>
+        <a href="#education"><li>Education</li></a>
+        <a href="./project-list.html" target="_blank"><li><span class="sr-only">this link opens in a new tab</span>HTML 110B Project List</li></a>
+        <a href="#blog-posts"><li>Blog Posts</li></a>
       </ul>
     </nav>
   </header>
@@ -50,7 +51,7 @@
   <main id="main" class="main">
 
 <!-- about me section -->
-    <section id="about-me" class="about-me">
+    <section id="about-me" class="about-me main-content">
       <div class="about-me-wrapper">
       <h3>ABOUT ALICIA</h3>
       <div class="about-me-flex">
@@ -64,9 +65,9 @@
         <h4>Click Here to Read More About:</h4>
         <hr>
         <ul class="ul-none">
-          <li><a href="https://www.amazon.com/Social-Psychology-World-Peace-Primer/dp/9382661670/ref=sr_1_1?dchild=1&keywords=psychology+and+world+peace+a+primer&qid=1602909632&sr=8-1" target="_blank">Social Psychology and World Peace: A Primer</a></li>
-          <li><a href="http://www.worldbridge.org/what-is-bridge/" target="_blank">What is Bridge?</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Quidditch_(real-life_sport)" target="_blank">Quidditch (a real-life sport)</a></li>
+          <li><span class="sr-only">this link opens in a new tab</span><a href="https://www.amazon.com/Social-Psychology-World-Peace-Primer/dp/9382661670/ref=sr_1_1?dchild=1&keywords=psychology+and+world+peace+a+primer&qid=1602909632&sr=8-1" target="_blank">Social Psychology and World Peace: A Primer</a></li>
+          <li><span class="sr-only">this link opens in a new tab</span><a href="http://www.worldbridge.org/what-is-bridge/" target="_blank">What is Bridge?</a></li>
+          <li><span class="sr-only">this link opens in a new tab</span><a href="https://en.wikipedia.org/wiki/Quidditch_(real-life_sport)" target="_blank">Quidditch (a real-life sport)</a></li>
         </ul>
       </aside>
       </div>
@@ -84,7 +85,7 @@
           <ul>
             <li><em>Bachelor of Arts, Psychology</em></li>
             <li><em>August 2013 - May 2017</em></li>
-            <li><a href="https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1943&context=scripps_theses"><em>Senior Thesis: “The Influence of Books, Television, and Computers on Empathy and Altruistic Behavior in Young Children"</em></a></li>
+            <li><span class="sr-only">this link opens in a new tab</span><a href="https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1943&context=scripps_theses" target="_blank"><em>Senior Thesis: “The Influence of Books, Television, and Computers on Empathy and Altruistic Behavior in Young Children"</em></a></li>
           </ul>
         <h4>University of Washington</h4>
           <ul>
@@ -97,8 +98,8 @@
       <h4>Learn More About the Schools:</h4>
       <hr>
         <ul class="ul-none">
-        <li><a href="https://www.scrippscollege.edu/about/" target="_blank">Scripps College</a></li>
-        <li><a href="https://www.washington.edu/about/" target="_blank">University of Washington</a></li>
+        <li><span class="sr-only">this link opens in a new tab</span><a href="https://www.scrippscollege.edu/about/" target="_blank">Scripps College</a></li>
+        <li><span class="sr-only">this link opens in a new tab</span><a href="https://www.washington.edu/about/" target="_blank">University of Washington</a></li>
         </ul>
     </aside>
     </div>
@@ -137,7 +138,7 @@
           <p>This website is an assignment for HTML110B to practice using HTML and CSS. Head over to GitHub to see more projects from the class.</p>
           <div class="contact">
             <span><i class="fas fa-phone"> &nbsp; 425-985-9902</i></span>
-            <span><i class="fas fa-envelope"> &nbsp; <a href="mailto:alicia_breyer@yahoo.com">alicia_breyer@yahoo.com</a></i></span>
+            <span><i class="fas fa-envelope"> &nbsp; <span class="sr-only">this link opens a new email</span><a href="mailto:alicia_breyer@yahoo.com">alicia_breyer@yahoo.com</a></i></span>
           </div>
           <div class="socials">
             <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -149,12 +150,12 @@
         <div class="footer-section links">
           <h2>Quick Links</h2>
           <ul>
-            <a href="#hero"><li>HomePage</li></a>
-            <a href="#about-me"><li>About Me</li></a>
-            <a href="#education"><li>Education</li></a>
-            <a href="./project-list.html" target="_blank"><li>HTML 110B Project List</li></a>
-            <a href="#blog-posts"><li>Blog Posts</li></a>
-            <a href="https://github.com/breyera"><li>GitHub Repositories</li></a>
+            <li id="quick-link"><a href="#hero">HomePage</a></li>
+            <li id="quick-link"><a href="#about-me">About Me</a></li>
+            <li id="quick-link"><a href="#education">Education</a></li>
+            <li id="quick-link"><a href="./project-list.html" target="_blank">HTML 110B Project List</a></li>
+            <li id="quick-link"><a href="#blog-posts">Blog Posts</a></li>
+            <li id="quick-link"><a href="https://github.com/breyera">GitHub Repositories</a></li>
           </ul>
         </div>
         <div class="footer-section contact-form">
