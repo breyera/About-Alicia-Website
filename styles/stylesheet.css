@@ -6,6 +6,22 @@ body {
   margin-top: 80px;
   margin: 0;
 }
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+.hidden:focus {
+  left: 0;
+}
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 /*hero section*/
 .hero {
   width: 100vw;
@@ -72,21 +88,24 @@ header * {
   display: inline;
 }
 
-header li {
+header ul a li {
   margin: 20px;
   padding: 1rem;
 }
 
-header li a {
+header ul a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: all .3s;
 }
 
-header li:hover {
+.topnav li:hover {
   border-bottom: 3px solid #B73225;
+  background: #B5CBDE;
+  border-radius: 3px;
 }
+
 /*end header section*/
 
 h3 {
@@ -468,15 +487,21 @@ h4 {
   margin-left: 100px;
 }
 
-.footer .footer-content .links ul a {
+.footer .footer-content .links ul li {
+  list-style-type: none;
+}
+
+.footer .footer-content .links ul li a {
   display: block;
+  text-decoration: none;
   margin-bottom: 10px;
   margin-left: -20px;
   font-size: 1.2em;
   transition: all .3s;
 }
 
-.footer .footer-content .links ul a:hover {
+
+.footer .footer-content .links ul li a:hover {
   color: white;
   margin-left: -10px;
   transition: all .3s;
